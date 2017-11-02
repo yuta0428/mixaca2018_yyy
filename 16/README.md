@@ -7,6 +7,8 @@
 
 * スーパーバイザ
     * プロセスの死活を監視する特別なビヘイビア
+    
+* https://github.com/yuta0428/mixaca2018_yyy/blob/elixir/16/sequence/lib/sequence/server.ex
 
 * `use GenServer`
     * GenServerというサーバーのビヘイビア
