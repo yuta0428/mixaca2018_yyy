@@ -15,6 +15,13 @@
 * [14 第14章 複数のプロセスを使う](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/14)
 * [15 第15章 ノード--分散システムの要](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/15)
 * [16 第16章 OTP: サーバ](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/16)
+* [17 第17章 OTP : スーパーバイザ](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/17)
+* [18 第18章 OTP : アプリケーション](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/18)
+* [19 第19章 タスクとエージェント](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/19)
+* [20 第20章 マクロとコードの評価]()
+* [21 第21章 モジュールのリンク : ビヘイビアとuse]()
+* [22 第22章 プロトコル--ポリモーフィック関数 ]()
+
 
 ### フォルダ内のREADME.mdに以下について記載してます。
 * 内容について
