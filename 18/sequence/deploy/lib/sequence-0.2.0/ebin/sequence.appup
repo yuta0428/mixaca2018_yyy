@@ -1,0 +1,13 @@
+{"0.2.0",
+ [{"0.1.0",
+   [{load_module,'Elixir.Sequence.Application'},
+    {update,'Elixir.Sequence.Server',{advanced,[]}},
+    {update,'Elixir.Sequence.Stash',{advanced,[]}},
+    {update,'Elixir.Sequence.SubSupervisor',supervisor},
+    {update,'Elixir.Sequence.Supervisor',supervisor}]}],
+ [{"0.1.0",
+   [{load_module,'Elixir.Sequence.Application'},
+    {update,'Elixir.Sequence.Server',{advanced,[]}},
+    {update,'Elixir.Sequence.Stash',{advanced,[]}},
+    {update,'Elixir.Sequence.SubSupervisor',supervisor},
+    {update,'Elixir.Sequence.Supervisor',supervisor}]}]}.
