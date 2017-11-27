@@ -18,9 +18,9 @@
 * [17 第17章 OTP : スーパーバイザ](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/17)
 * [18 第18章 OTP : アプリケーション](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/18)
 * [19 第19章 タスクとエージェント](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/19)
-* [20 第20章 マクロとコードの評価]()
-* [21 第21章 モジュールのリンク : ビヘイビアとuse]()
-* [22 第22章 プロトコル--ポリモーフィック関数 ]()
+* [20 第20章 マクロとコードの評価](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/20)
+* [21 第21章 モジュールのリンク : ビヘイビアとuse](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/21)
+* [22 第22章 プロトコル--ポリモーフィック関数 ](https://github.com/yuta0428/mixaca2018_yyy/tree/elixir/22)
 
 
 ### フォルダ内のREADME.mdに以下について記載してます。
