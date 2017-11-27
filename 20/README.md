@@ -45,7 +45,7 @@ iex(1)> My.myif 1==2, do: (IO.puts "1==2"), else: (IO.puts "1!=2")
 
 ### 2. マクロで遅延評価させる
 * 引数に渡す`IO.puts `が評価されないように`myif`をマクロ定義に変更
-* `condition`と``を出力
+* `condition`と`clauses`を出力
 * https://github.com/yuta0428/mixaca2018_yyy/blob/elixir/20/myif_2.ex
 
 実行結果
