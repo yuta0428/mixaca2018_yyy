@@ -20,7 +20,7 @@
 * したがってunquoteはquoteブロック内でしか使えない
 
 ## ex) if文を作る
-#### 最終的な使い方
+### 最終的な形
 ```ex
 myif <<condition>> do
   <<evaluate if true>>
@@ -29,10 +29,11 @@ else
 end
 ```
 
-#### 1. 普通に関数で実装
-* myif_1.ex
+### 1. 普通に関数で実装
+* https://github.com/yuta0428/mixaca2018_yyy/blob/elixir/20/myif_1.ex
 
-```実行結果
+実行結果
+```
 iex(1)> My.myif 1==2, do: (IO.puts "1==2"), else: (IO.puts "1!=2")
 1==2
 1!=2
@@ -42,12 +43,13 @@ iex(1)> My.myif 1==2, do: (IO.puts "1==2"), else: (IO.puts "1!=2")
 * 引数に渡した`IO.puts "1==2"`, `IO.puts "1!=2"`が評価されてしまっている。
 * 実際には`My.myif 1==2, do: :ok, else: :ok`が実行されてしまっている。
 
-#### 2. マクロで遅延評価させる
+### 2. マクロで遅延評価させる
 * 引数に渡す`IO.puts `が評価されないように`myif`をマクロ定義に変更
 * `condition`と``を出力
-* myif_2.ex
+* https://github.com/yuta0428/mixaca2018_yyy/blob/elixir/20/myif_2.ex
 
-```実行結果
+実行結果
+```
 $ iex "20/myif_2.ex"
 
 condition
@@ -66,9 +68,11 @@ else: {{:., [line: 13],
 * よく分かっていないが、内部表現をそのまま実行すると、その評価結果を返してくれる
   * そのため、`do_clause`は`IO.puts "1==2"`を`else_clause`は`IO.puts "1!=2"`出力する。
 
-#### 3. `case`句できちんと評価されるように、quote関数でブロックを受けて、unquoteで評価させる。
-* myif_3.ex
-```実行結果
+### 3. `case`句できちんと評価されるように、quote関数でブロックを受けて、unquoteで評価させる。
+* https://github.com/yuta0428/mixaca2018_yyy/blob/elixir/20/myif_3.ex
+
+実行結果
+```
 1!=2
 ```
 
@@ -77,7 +81,8 @@ else: {{:., [line: 13],
 * 単なる変数名と値のキーワードリスト
 * quoteにバインディングを渡すと、quoteのボディの中の変数がセットされる
 
-```引数で渡した名前を関数名とし、その名前を返す関数を定義するマクロ.ex 
+引数で渡した名前を関数名とし、その名前を返す関数を定義するマクロ
+```ex 
 defmacro mydef(name) do
   quote do
     def unquote(name)(), do: unquote(name)  # def unquote(name)が関数名定義
@@ -85,7 +90,8 @@ defmacro mydef(name) do
 end
 ```
 
-```quoteブロックで渡された値を利用可能にする.ex
+quoteブロックで渡された値を利用可能にする
+```ex
 defmacro mydef(name) do
   quote binf_quote: [name: name] do
     def unquote(name)(), do: unquote(name)  # def unquote(name)が関数名定義
